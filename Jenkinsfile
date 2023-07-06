@@ -2,7 +2,6 @@ node {
     stage ('Checkout') {
         cleanWs()
         sh '''
-            env
             git clone --branch ${BRANCH_NAME} /Users/jkasturi/kmit
         '''
     }
