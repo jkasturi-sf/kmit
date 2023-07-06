@@ -8,8 +8,7 @@ node {
     stage('Test') {
         echo "Runnin tests"
         sh '''
-            py39
-            python -m unittest math_functions_test.MathFunctionsTest
+            python3 -m unittest math_functions_test.MathFunctionsTest
         '''
     }  
 }
