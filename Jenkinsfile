@@ -15,7 +15,6 @@ node {
     stage('Test') {
         echo "Runnin tests"
         sh '''
-            cd kmit
             python3 -m unittest math_functions_test.MathFunctionsTest
         '''
     }  
