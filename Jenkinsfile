@@ -1,6 +1,7 @@
 node {
     stage ('Checkout') {
         cleanWs()
+        checkout scm
         sh '''
             git clone --branch ${BRANCH_NAME} /Users/jkasturi/kmit
         '''
