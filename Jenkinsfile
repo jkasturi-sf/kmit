@@ -1,10 +1,7 @@
 node {
     stage ('Checkout') {
         cleanWs()
-        sh '''
-            env
-            git clone --branch ${BRANCH_NAME} /Users/jkasturi/kmit
-        '''
+        checkout scm
     }
     stage ('Build') {
         echo "Setup python environment"
